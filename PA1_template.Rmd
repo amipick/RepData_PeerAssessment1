@@ -31,7 +31,7 @@ print(MeanSteps)
 MedianSteps <- median(data1$total_steps)
 print(MedianSteps)
 ```
->>>>>>> Stashed changes
+
 ## What is the average daily activity pattern?
 ```{r, echo=TRUE}
 # Make a time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
