@@ -149,8 +149,6 @@ labs(y="Average # of Steps", x="Interval")
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
 
 
-```text
-* All figures are also available in figuers directory
-```
+
 
 
