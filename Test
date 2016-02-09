@@ -1,4 +1,4 @@
-```R
+```r
 rm(list=ls())
 library(data.table)
 data <- read.table("activity.csv", header=T, sep=",")
