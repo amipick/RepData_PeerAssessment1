@@ -7,11 +7,19 @@ output:
 
 
 ## Loading and preprocessing the data
-
-
-
+```r
+library(data.table)
+data <- read.table("activity.csv", header=T, sep=",")
+```
 ## What is mean total number of steps taken per day?
-
+```r
+library(sqldf) # I like this spackage!
+# sqlite syntax summarizing steps by date where nulls are removed
+data1 <- sqldf("select date,sum(steps) as total_steps from data where steps is not null group by 1")
+png(file= "fig1.png")
+hist(data1$total_steps, col="red", xlab="Total Steps", main="Total Steps per Day")
+dev.off() ### see fig1 in figures directory
+```
 
 
 ## What is the average daily activity pattern?
